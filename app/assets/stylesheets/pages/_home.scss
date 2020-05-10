@@ -1,1 +1,50 @@
 // Specific CSS for your home-page
+.main-title {
+  width: 90%;
+  margin: 20px auto;
+  font-size: 28px;
+  font-weight: bold;
+  padding-bottom: 5px;
+  border-bottom: 1px solid lightgrey;
+}
+
+.description-container {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+  }
+}
+
+.description-text {
+  padding: 0 20px;
+  font-size: 16px;
+  h2 {
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 24px;
+  }
+
+}
+
+
+
+@media(max-width: 600px) {
+  .description-container {
+    grid-template-columns: 1fr;
+    img {
+      height: 30vh;
+    }
+  }
+  .description-text {
+   padding: 20px 0px;
+   font-size: 16px;
+   p {
+    margin-bottom: 0px;
+  }
+}
+}
