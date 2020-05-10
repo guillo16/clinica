@@ -57,6 +57,23 @@
   }
 }
 
+.profesional-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+
+}
+
+.profesional-card {
+  img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+
+  }
+
+}
+
 @media(max-width: 600px) {
   .main-title {
     text-align: center;
