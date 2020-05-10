@@ -1,6 +1,9 @@
 // Specific CSS for your home-page
-.main-title {
+.main-wrapper {
   width: 90%;
+  margin: 0 auto;
+}
+.main-title {
   margin: 20px auto;
   font-size: 28px;
   font-weight: bold;
@@ -9,8 +12,6 @@
 }
 
 .description-container {
-  width: 90%;
-  margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   img {
@@ -28,6 +29,11 @@
     text-decoration: underline;
     font-size: 24px;
   }
+}
+
+.speciality-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 @media(max-width: 600px) {
