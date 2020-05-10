@@ -1,6 +1,6 @@
 class Article < ApplicationRecord
-  validates :title, precense: true
-  validates :subtitle, precense: true
-  validates :photo, precense: true
-  validates :content, precense: true
+  validates :title, presence: true
+  validates :subtitle, presence: true
+  validates :photo, presence: true
+  validates :content, presence: true
 end
