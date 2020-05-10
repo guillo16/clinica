@@ -1,0 +1,10 @@
+<% if user_signed_in? %>
+<div class="p-3">
+  <%= link_to 'Editar Articulo', edit_article_path(@article), class: 'btn btn-warning btn-lg btn-block' %>
+  <%= link_to 'Eliminar articulo', @article, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger btn-lg btn-block' %>
+</div>
+<% else %>
+<% end %>
+<h1>Articles#show</h1>
+<h2><%= @article.title %></h2>
+<img src="<%= @article.photo %>" alt="">
