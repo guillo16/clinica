@@ -1,0 +1,41 @@
+.btn-main {
+  padding: 12px 32px;
+  font-size: 15px;
+  background-color: #0059AF;
+  border-radius: 30px;
+  margin-right: 20px;
+  color: white;
+  font-weight: bold;
+  border: 2px solid #0059AF;
+  &:hover {
+   color: grey;
+   text-decoration: none;
+  }
+}
+
+.secondary {
+  background: transparent;
+  border: 2px solid white;
+  &:hover {
+   color: #0059AF;
+   text-decoration: none;
+   border: 2px solid #0059AF;
+  }
+}
+
+@media(max-width: 600px) {
+  .btn-main {
+    padding: 12px 22px;
+    font-size: 13px;
+    background-color: #0059AF;
+    border-radius: 20px;
+    margin-right: 8px;
+    color: white;
+    font-weight: bold;
+    border: 2px solid #0059AF;
+  }
+  .secondary {
+    background: transparent;
+    border: 2px solid white;
+  }
+}

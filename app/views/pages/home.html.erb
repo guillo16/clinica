@@ -1,2 +1,46 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="main-banner" style="background-image: linear-gradient(104.87deg, rgba(0, 0, 0, 0.8) 28.4%, rgba(0, 0, 0, 0.1) 76.58%), url(https://res.cloudinary.com/dw7ox75dg/image/upload/c_scale,w_1511/v1589135490/photo-1496817763416-2f4494189b95.jpg);">
+  <div class="main-container">
+    <div class="mb-3">
+      <h1><strong>CENTRO DE OJOS</strong></h1>
+      <h1><strong>ARGAÑARAZ</strong> SRL</h1>
+    </div>
+    <div class="main-button-container">
+      <%= link_to 'NOVEDADES', '#', class: 'btn-main'  %>
+      <%= link_to 'CONTACTO', '#', class: 'btn-main secondary' %>
+    </div>
+  </div>
+</div>
+<div class="main-wrapper">
+  <section id="description">
+    <h2 class="main-title">Quienes somos</h2>
+    <%= render 'shared/description' %>
+  </section>
+  <section id="specialty">
+    <h2 class="main-title">Especialidades</h2>
+    <%= render 'shared/speciality' %>
+  </section>
+  <section id="specialty">
+    <h2 class="main-title">Nuestros Profesionales</h2>
+    <%= render 'shared/profesionals' %>
+    <div class="p-5 text-center">
+      <%= link_to 'CONOCE NUESTRO EQUIPO', articles_path, class: 'btn-main'  %>
+    </div>
+  </section>
+  <section id="articles">
+    <h2 class="main-title">Novedades</h2>
+    <div class="article-main-container">
+      <% @articles.last(3).each do |article| %>
+      <%= render 'shared/articles_card', article: article %>
+      <% end %>
+    </div>
+    <div class="p-5 text-center">
+      <%= link_to 'NOVEDADES', articles_path, class: 'btn-main'  %>
+    </div>
+  </section>
+</div>
+<section id="social">
+ <%= render 'shared/social' %>
+</section>
+<div class="pre-footer p3">
+  <h2 style="color: #F4F4F4">contacto</h2>
+</div>
