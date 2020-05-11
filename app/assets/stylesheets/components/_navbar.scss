@@ -16,3 +16,23 @@
     margin-bottom: 0px;
   }
 }
+
+//main navbar
+.navbar-main {
+  justify-content: space-between;
+  background: white;
+  border-bottom: 5px solid #0059AF;
+}
+
+.navbar-main .navbar-collapse {
+  flex-grow: 0;
+}
+
+
+
+.navbar-logo {
+  p {
+    font-size: 14px;
+    margin-bottom: 0px;
+  }
+}
