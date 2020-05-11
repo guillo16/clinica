@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
+  get 'pages/about', 'pages#about'
 
-  get 'contacts/new'
   devise_for :users
   root to: 'pages#home'
   resources :articles
