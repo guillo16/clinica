@@ -1,6 +1,21 @@
-<% @articles.each do |article| %>
-<%= link_to  article_path(article) do %>
-<img src="<%= article.photo %>" alt="">
-<h1>@article.title</h1>
-<% end %>
-<% end %>
+<div class="article-banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/background.png);">
+  <div>
+    <h1>NOVEDADES</h1>
+  </div>
+</div>
+<div class="articles-title">
+  <div class="main-wrapper">
+    <h2>Ultimas Noticias</h2>
+  </div>
+</div>
+<div class="main-wrapper">
+  <div class="article-main-container">
+    <% @articles.each do |article| %>
+    <%= render 'shared/articles_card', article: article %>
+    <% end %>
+  </div>
+  <div class="p-5 text-center">
+    <%= link_to 'Volver', root_path, class: 'btn-main'  %>
+  </div>
+</div>
+
