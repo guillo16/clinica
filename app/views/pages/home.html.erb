@@ -22,6 +22,9 @@
   <section id="specialty">
     <h2 class="main-title">Nuestros Profesionales</h2>
     <%= render 'shared/profesionals' %>
+    <div class="p-5 text-center">
+      <%= link_to 'CONOCE NUESTRO EQUIPO', articles_path, class: 'btn-main'  %>
+    </div>
   </section>
   <section id="articles">
     <h2 class="main-title">Novedades</h2>
@@ -30,8 +33,14 @@
       <%= render 'shared/articles_card', article: article %>
       <% end %>
     </div>
+    <div class="p-5 text-center">
+      <%= link_to 'NOVEDADES', articles_path, class: 'btn-main'  %>
+    </div>
   </section>
 </div>
 <section id="social">
  <%= render 'shared/social' %>
 </section>
+<div class="pre-footer p3">
+  <h2 style="color: #F4F4F4">contacto</h2>
+</div>
