@@ -85,6 +85,12 @@
   }
 
 }
+//article(novedades) part
+.article-main-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+}
 
 @media(max-width: 800px) {
   //speciality(especialidades) part
@@ -114,6 +120,7 @@
   .profesional-container {
     grid-template-columns: 1fr 1fr;
   }
+
 }
 
 
@@ -150,5 +157,9 @@
     p {
       font-size: 13px;
     }
+  }
+  //article(novedades) part
+  .article-main-container {
+    grid-template-columns: 1fr;
   }
 }

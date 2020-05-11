@@ -19,8 +19,16 @@
     <h2 class="main-title">Especialidades</h2>
     <%= render 'shared/speciality' %>
   </section>
-   <section id="specialty">
+  <section id="specialty">
     <h2 class="main-title">Nuestros Profesional</h2>
     <%= render 'shared/profesionals' %>
+  </section>
+  <section id="articles">
+    <h2 class="main-title">Novedades</h2>
+    <div class="article-main-container">
+      <% @articles.last(3).each do |article| %>
+      <%= render 'shared/articles_card', article: article %>
+      <% end %>
+    </div>
   </section>
 </div>
