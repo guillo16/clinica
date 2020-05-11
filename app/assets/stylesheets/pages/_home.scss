@@ -3,6 +3,7 @@
   width: 90%;
   margin: 0 auto;
 }
+//title of the page
 .main-title {
   margin: 30px auto;
   font-size: 28px;
@@ -11,6 +12,7 @@
   border-bottom: 1px solid lightgrey;
 }
 
+//description(quienes somos) part
 .description-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -31,6 +33,7 @@
   }
 }
 
+//speciality(especialidades) part
 .speciality-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -57,6 +60,7 @@
   }
 }
 
+//profecional-part
 .profesional-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -69,16 +73,57 @@
     width: 100%;
     object-fit: cover;
     height: 100%;
+  }
 
+  h2 {
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 6px;
+  }
+  p {
+    font-size: 14px;
   }
 
 }
 
+@media(max-width: 800px) {
+  //speciality(especialidades) part
+  .speciality-container {
+    grid-template-columns: 1fr;
+    img {
+      width: 100%;
+      object-fit: cover;
+      height: 50vh;
+    }
+  }
+  .speciality-content {
+    padding: 20px 0px ;
+    h2 {
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 2px;
+    }
+
+    p {
+      font-size: 13px;
+      margin-bottom: 8px;
+      color: grey;
+    }
+  }
+  //profesional part
+  .profesional-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
 @media(max-width: 600px) {
+  //title
   .main-title {
     text-align: center;
     font-size: 24px;
   }
+  //description(quienes somos) part
   .description-container {
     grid-template-columns: 1fr;
     img {
@@ -97,28 +142,13 @@
       font-size: 18px;
     }
   }
-
-  .speciality-container {
-    grid-template-columns: 1fr;
-    img {
-      width: 100%;
-      object-fit: cover;
-      height: 50vh;
-    }
-  }
-
-  .speciality-content {
-    padding: 20px 0px ;
+  //profesional part
+  .profesional-card {
     h2 {
-      font-size: 22px;
-      font-weight: bold;
-      margin-bottom: 2px;
+      font-size: 18px;
     }
-
     p {
       font-size: 13px;
-      margin-bottom: 8px;
-      color: grey;
     }
   }
 }
