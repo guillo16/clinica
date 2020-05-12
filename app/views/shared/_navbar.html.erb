@@ -1,6 +1,6 @@
 <div class="navbar navbar-expand-md navbar-light navbar-lewagon fixed-top">
   <div class="navbar-logo">
-    <%= link_to "#", class: "navbar-brand" do %>
+    <%= link_to root_path, class: "navbar-brand" do %>
     <p><strong>CENTRO DE OJOS</strong></p>
     <p><strong>ARGAÑARAZ</strong> SRL</p>
     <% end %>
@@ -24,7 +24,7 @@
       </li>
       <% if user_signed_in? %>
       <li class="nav-item">
-        <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
+        <%= link_to "Cerrar sesión", destroy_user_session_path, method: :delete, class: "nav-link" %>
       </li>
       <% else %>
       <% end %>
