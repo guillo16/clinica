@@ -1,6 +1,6 @@
 <div class="navbar navbar-expand-md navbar-light navbar-home fixed-top">
   <div class="navbar-home-logo">
-    <%= link_to "#", class: "navbar-brand" do %>
+    <%= link_to root_path, class: "navbar-brand" do %>
     <p><strong>CENTRO DE OJOS</strong></p>
     <p><strong>ARGAÑARAZ</strong> SRL</p>
     <% end %>
@@ -20,11 +20,11 @@
         <%= link_to "Especialidades", pages_content_path, class: "nav-link" %>
       </li>
       <li class="nav-item">
-        <%= link_to "Contacto", "#", class: "nav-link" %>
+        <%= link_to "Contacto", new_contact_path, class: "nav-link" %>
       </li>
       <% if user_signed_in? %>
       <li class="nav-item">
-        <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
+        <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "nav-link" %>
       </li>
       <% else %>
       <% end %>
