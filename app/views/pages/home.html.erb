@@ -24,7 +24,7 @@
     <h2 class="main-title">Nuestros Profesionales</h2>
     <%= render 'shared/profesionals' %>
     <div class="p-5 text-center">
-      <%= link_to 'CONOCE NUESTRO EQUIPO', articles_path, class: 'btn-main'  %>
+      <%= link_to 'CONOCE NUESTRO EQUIPO', pages_about_path, class: 'btn-main'  %>
     </div>
   </section>
   <section id="articles">
@@ -34,7 +34,7 @@
       <%= render 'shared/articles_card', article: article %>
       <% end %>
     </div>
-    <div class="p-5 text-center">
+    <div class="p-5 text-center" style="border-bottom: 1px solid lightgrey;">
       <%= link_to 'NOVEDADES', articles_path, class: 'btn-main'  %>
     </div>
   </section>
