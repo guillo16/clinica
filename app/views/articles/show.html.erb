@@ -8,7 +8,7 @@
 <% else %>
 <% end %>
 <div class="article-show-container">
-  <img src="<%= @article.photo %>" alt="">
+  <%= cl_image_tag @article.photo.key %>
   <h2><%= @article.title %></h2>
   <h3><%= @article.subtitle %></h3>
   <p><%= @article.content %></p>
