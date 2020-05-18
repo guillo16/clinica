@@ -1,6 +1,6 @@
 .main-banner {
   background-size: cover;
-  background-position: sticky;
+  background-position: 90%, 20%;
   height: 100vh ;
   display: flex;
   align-items: center;
@@ -44,15 +44,6 @@
   justify-content: center;
 }
 
-
-
-
-@media(max-width: 1028px) {
-  .main-banner {
-    height: 75vh;
-  }
-}
-
 @media(max-width: 900px) {
   .main-container {
     h1 {
@@ -63,7 +54,8 @@
 
 @media(max-width: 600px) {
   .main-banner {
-    height: 50vh;
+    background-position: 90%, 25%;
+
   }
   .main-container {
    text-align: center;
