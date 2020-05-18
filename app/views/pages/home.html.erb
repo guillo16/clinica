@@ -24,7 +24,9 @@
     <h2 class="main-title">Nuestros Profesionales</h2>
     <%= render 'shared/profesionals' %>
     <div class="p-5 text-center">
-      <%= link_to 'CONOCE NUESTRO EQUIPO', pages_about_path, class: 'btn-main'  %>
+      <%= link_to 'CONOCE NUESTRO EQUIPO',
+      "#{pages_about_path}#equipo", class: 'btn-main'  %>
+
     </div>
   </section>
   <section id="articles">
